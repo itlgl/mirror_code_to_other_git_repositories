@@ -1,0 +1,18 @@
+# https://blog.csdn.net/sculpta/article/details/104897320
+# https://github.com/Yikun/hub-mirror-action/blob/master/README_CN.md
+name: GitHub Actions Mirror
+
+on: [push, delete, create]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Mirror to gitee
+      uses: Yikun/hub-mirror-action@master
+      with:
+        src: github/itlgl
+        dst: gitee/itlgl
+        dst_key: ${{ secrets.GITEE_KEY }}
+        dst_token: ${{ secrets.GITEE_TOKEN }}
+        white_list: "dian24,byteutil,IOSDialog,cryptoutil,gradle-mvn-push,WriteNotifyBleLibrary,AndroidDebugLib"
