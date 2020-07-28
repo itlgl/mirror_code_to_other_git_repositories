@@ -2,7 +2,10 @@
 # https://github.com/Yikun/hub-mirror-action/blob/master/README_CN.md
 name: GitHub Actions Mirror
 
-on: [push, delete, create]
+on:
+  schedule:
+    # 每天上午9点运行
+    - cron: '0 1 * * *'
 
 jobs:
   build:
