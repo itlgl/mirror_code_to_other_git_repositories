@@ -18,4 +18,4 @@ jobs:
         dst: gitee/itlgl
         dst_key: ${{ secrets.GITEE_KEY }}
         dst_token: ${{ secrets.GITEE_TOKEN }}
-        static_list: "dian24,byteutil,IOSDialog,cryptoutil,gradle-mvn-push,WriteNotifyBleLibrary,AndroidDebugLib,tools"
+        static_list: "dian24,byteutil,IOSDialog,cryptoutil,gradle-mvn-push,WriteNotifyBleLibrary,AndroidDebugLib,tools,note"
